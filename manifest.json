@@ -1,0 +1,14 @@
+{
+    "name": "Youtube Blur",
+    "description": "Blurs YouTube except the Search Part",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "js": ["blur.js"],
+            "matches": ["https://www.youtube.com/"]
+        }
+    ],
+    "permissions": ["scripting", "activeTab"]
+}
